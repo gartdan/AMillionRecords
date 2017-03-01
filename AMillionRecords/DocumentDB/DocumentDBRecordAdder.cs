@@ -54,7 +54,7 @@ namespace AMillionRecords.DocumentDB
 
         public void InsertRecords()
         {
-            Task.Run(async () => await InsertRecordsAsync());
+            InsertRecordsAsync().Wait();
         }
 
         public async Task InsertRecordsAsync()
